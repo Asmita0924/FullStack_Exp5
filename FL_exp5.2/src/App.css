@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 22px;
+}
+
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: yellow;
+}
+
+/* Page */
+.page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
