@@ -16,9 +16,7 @@ JavaScript (JSX)
 CSS
 
 <img width="1902" height="1007" alt="Screenshot 2026-02-13 151531" src="https://github.com/user-attachments/assets/cc9d8447-b2cb-4b62-8e1d-947e59ddab67" />
-
-<img width="1919" height="1044" alt="Screenshot 2026-02-13 145857" src="https://github.com/user-attachments/assets/677870cf-449e-45f9-ac31-e79717c979fa" />
-
+<img width="1895" height="540" alt="Screenshot 2026-02-16 150731" src="https://github.com/user-attachments/assets/b5e01d17-c9b1-45f8-a489-c6d7da91b8a1" />
 
 ## Installation Steps:
 Create React App (Using Vite)
