@@ -1,32 +1,26 @@
-Experiment 5:
-Experiment 5.1: Component Lazy Loading Using React.lazy and Suspense
+## Experiment 5:
+## Experiment 5.1: Component Lazy Loading Using React.lazy and Suspense
 
-Aim
+## Aim
 To implement component lazy loading in a React application using React.lazy() and Suspense in order to improve performance and reduce initial bundle size.
 
-Theory
-In large React applications, loading all components at once increases the initial bundle size and slows down the application.
-Lazy loading is a technique where components are loaded only when they are needed.
-
-React provides:
+## React provides:
 React.lazy() → to dynamically import components
 Suspense → to display fallback UI while loading
 React.lazy() uses JavaScript’s dynamic import() function to split the code into separate bundles.
 Suspense shows a fallback UI (like “Loading…”) until the component finishes loading.
 
-This technique improves:
-Initial load performance
-Application efficiency
-User experience
-
-Technologies Used:
+## Technologies Used:
 React (Vite or Create React App)
 JavaScript (JSX)
 CSS
 
+<img width="1902" height="1007" alt="Screenshot 2026-02-13 151531" src="https://github.com/user-attachments/assets/cc9d8447-b2cb-4b62-8e1d-947e59ddab67" />
+
+<img width="1919" height="1044" alt="Screenshot 2026-02-13 145857" src="https://github.com/user-attachments/assets/677870cf-449e-45f9-ac31-e79717c979fa" />
 
 
-Installation Steps:
+## Installation Steps:
 Create React App (Using Vite)
 ``
 npm create vite@latest my-app
@@ -36,7 +30,7 @@ npm install``
 Run the Application
 ``npm run dev``
 
-Procedure
+## Procedure
 Create a React application.
 Create a component (Dashboard.jsx).
 Replace normal import with React.lazy().
@@ -45,27 +39,40 @@ Provide fallback UI.
 Run the application.
 Observe loading message before component appears.
 
-Working
-Initially, only the main bundle loads.
-When Dashboard component is required, it loads dynamically.
-While loading, "Loading..." message is displayed.
-After loading completes, the Dashboard component renders.
-This reduces the initial JavaScript bundle size.
-
-Advantages
-Improves initial load time
-Supports code splitting
-Better performance
-Efficient resource usage
-
-Limitations
+## Limitations
 Slight delay during first-time load
 Requires error boundaries for production use
 
-Result
+## Result
 The experiment was successfully implemented.
 The Dashboard component was loaded dynamically using React.lazy() and Suspense, improving frontend performance.
 
-Conclusion
-Component lazy loading in React helps optimize application performance by loading components only when required. It is an essential technique for building scalable and efficient React applications.
+## Experiment–2: Route-Based Lazy Loading in SPA
+
+## Aim
+To implement route-based lazy loading in a React Single Page Application (SPA) to improve performance and reduce initial bundle size.
+
+## Technologies Used
+React
+React Router DOM
+JavaScript (JSX)
+CSS
+
+<img width="1917" height="473" alt="Screenshot 2026-02-14 221027" src="https://github.com/user-attachments/assets/ae166ada-8269-40bb-826a-0944c309e7a5" />
+<img width="1912" height="465" alt="Screenshot 2026-02-14 221038" src="https://github.com/user-attachments/assets/43bb0802-1c80-4b93-8c51-c50e99d2cea0" />
+<img width="1914" height="638" alt="Screenshot 2026-02-14 221118" src="https://github.com/user-attachments/assets/081e4249-54c0-414c-aed8-6a70d37df570" />
+<img width="1918" height="383" alt="Screenshot 2026-02-14 221327" src="https://github.com/user-attachments/assets/b5444121-e279-4336-b86c-d3dd99a499fd" />
+
+## Procedure
+Install react-router-dom.
+Create multiple route components.
+Apply React.lazy() to route components.
+Wrap routes inside Suspense.
+Run and observe dynamic loading.
+
+## Result
+Route-based lazy loading was successfully implemented. Components load only when their respective routes are accessed, improving application performance.
+
+
+
 
